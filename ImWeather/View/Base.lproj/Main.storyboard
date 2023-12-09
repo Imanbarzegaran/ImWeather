@@ -15,16 +15,29 @@
                     <view key="view" contentMode="scaleToFill" id="2yD-Ig-rGO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HgI-0I-ciC">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5WO-hb-ggV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HgI-0I-ciC" firstAttribute="top" secondItem="2yD-Ig-rGO" secondAttribute="top" id="Gx1-eb-S7L"/>
+                            <constraint firstItem="HgI-0I-ciC" firstAttribute="leading" secondItem="2yD-Ig-rGO" secondAttribute="leading" id="UK3-lT-xpn"/>
+                            <constraint firstAttribute="trailing" secondItem="HgI-0I-ciC" secondAttribute="trailing" id="ePj-vL-7vo"/>
+                            <constraint firstItem="HgI-0I-ciC" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="gyK-iI-cgp"/>
+                            <constraint firstAttribute="bottom" secondItem="HgI-0I-ciC" secondAttribute="bottom" id="vdQ-hd-ynk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wd-1z-F4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="364" y="-141"/>
+            <point key="canvasLocation" x="362.59541984732823" y="-141.5492957746479"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="7308" height="7308"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
