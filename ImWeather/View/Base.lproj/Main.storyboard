@@ -74,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBH-cy-5DJ">
-                                <rect key="frame" x="233" y="233" width="69" height="20.333333333333343"/>
+                                <rect key="frame" x="233" y="233" width="69" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" name="weatherColor"/>
                                 <nil key="highlightedColor"/>
@@ -114,10 +114,20 @@
                             <constraint firstItem="d12-uI-MMR" firstAttribute="bottom" secondItem="5WO-hb-ggV" secondAttribute="bottom" constant="2" id="xtj-Ua-O8H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="conditionIcon" destination="rNB-SW-G45" id="mHa-ii-bbe"/>
+                        <outlet property="conditionImage" destination="d12-uI-MMR" id="9jp-7v-0Dr"/>
+                        <outlet property="conditionLabel" destination="ZBH-cy-5DJ" id="4Ly-Qn-bRx"/>
+                        <outlet property="locationLabel" destination="cjL-KM-HYB" id="dg3-4F-8CQ"/>
+                        <outlet property="next7DayButton" destination="LRQ-95-XJG" id="oVp-Bm-oJP"/>
+                        <outlet property="searchTextField" destination="T2c-Sa-mJX" id="ILb-Zm-KG2"/>
+                        <outlet property="tempLabel" destination="TTP-pv-sm2" id="rFe-tk-mz3"/>
+                        <outlet property="unitLabel" destination="pwc-Dp-op6" id="we1-qL-Ylq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wd-1z-F4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362.59541984732823" y="-141.5492957746479"/>
+            <point key="canvasLocation" x="-22.137404580152669" y="-163.38028169014086"/>
         </scene>
     </scenes>
     <resources>
