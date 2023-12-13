@@ -79,17 +79,10 @@
                                 <color key="textColor" name="weatherColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRQ-95-XJG">
-                                <rect key="frame" x="139" y="407" width="115" height="39"/>
-                                <color key="tintColor" name="weatherColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next 7 Days"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5WO-hb-ggV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="LRQ-95-XJG" firstAttribute="top" secondItem="TTP-pv-sm2" secondAttribute="bottom" constant="15" id="0yc-v4-h8A"/>
                             <constraint firstItem="TTP-pv-sm2" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="1a6-Kq-ohh"/>
                             <constraint firstItem="5WO-hb-ggV" firstAttribute="trailing" secondItem="pwc-Dp-op6" secondAttribute="trailing" constant="91" id="3bW-q6-vpk"/>
                             <constraint firstItem="T2c-Sa-mJX" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="8gf-BC-bbz"/>
@@ -103,7 +96,6 @@
                             <constraint firstItem="HgI-0I-ciC" firstAttribute="leading" secondItem="2yD-Ig-rGO" secondAttribute="leading" id="UK3-lT-xpn"/>
                             <constraint firstItem="pWt-Eq-1Lx" firstAttribute="leading" secondItem="5WO-hb-ggV" secondAttribute="leading" constant="50" id="UzR-eR-a1t"/>
                             <constraint firstItem="pWt-Eq-1Lx" firstAttribute="top" secondItem="cjL-KM-HYB" secondAttribute="bottom" constant="36" id="aG9-dO-vEA"/>
-                            <constraint firstItem="LRQ-95-XJG" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="b8M-lO-Iza"/>
                             <constraint firstItem="pwc-Dp-op6" firstAttribute="top" secondItem="ZBH-cy-5DJ" secondAttribute="bottom" constant="42.670000000000002" id="ccZ-M6-cNd"/>
                             <constraint firstAttribute="trailing" secondItem="HgI-0I-ciC" secondAttribute="trailing" id="ePj-vL-7vo"/>
                             <constraint firstItem="Ecf-RY-5Qx" firstAttribute="top" secondItem="cjL-KM-HYB" secondAttribute="bottom" constant="34.670000000000002" id="ezU-Nj-CZh"/>
@@ -116,10 +108,9 @@
                     </view>
                     <connections>
                         <outlet property="conditionIcon" destination="rNB-SW-G45" id="mHa-ii-bbe"/>
-                        <outlet property="conditionImage" destination="d12-uI-MMR" id="9jp-7v-0Dr"/>
+                        <outlet property="conditionImage" destination="d12-uI-MMR" id="mgw-zi-WgD"/>
                         <outlet property="conditionLabel" destination="ZBH-cy-5DJ" id="4Ly-Qn-bRx"/>
                         <outlet property="locationLabel" destination="cjL-KM-HYB" id="dg3-4F-8CQ"/>
-                        <outlet property="next7DayButton" destination="LRQ-95-XJG" id="oVp-Bm-oJP"/>
                         <outlet property="searchTextField" destination="T2c-Sa-mJX" id="ILb-Zm-KG2"/>
                         <outlet property="tempLabel" destination="TTP-pv-sm2" id="rFe-tk-mz3"/>
                         <outlet property="unitLabel" destination="pwc-Dp-op6" id="we1-qL-Ylq"/>
@@ -135,7 +126,7 @@
         <image name="background" width="7308" height="7308"/>
         <image name="sun.min.fill" catalog="system" width="128" height="123"/>
         <namedColor name="weatherColor">
-            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

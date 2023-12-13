@@ -15,7 +15,6 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var unitLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var conditionIcon: UIImageView!
-    @IBOutlet weak var next7DayButton: UIButton!
     @IBOutlet weak var conditionImage: UIImageView!
     @IBOutlet weak var searchTextField: UITextField!
     
