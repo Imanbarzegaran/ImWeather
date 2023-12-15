@@ -17,21 +17,26 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var conditionIcon: UIImageView!
     @IBOutlet weak var conditionImage: UIImageView!
     @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
     
     
     
     
-    let locationManager = CLLocationManager()
+    let weatherManager = WeatherManager()
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        weatherManager.delegate = self
+        searchTextField.delegate = self
         
     }
-
-
 }
+
+
+
+    
+
 

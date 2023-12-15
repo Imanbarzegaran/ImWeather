@@ -27,7 +27,7 @@
                                 <color key="textColor" name="weatherColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="37" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-RY-5Qx">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="37" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-RY-5Qx">
                                 <rect key="frame" x="264" y="182" width="69" height="20.333333333333343"/>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T2c-Sa-mJX">
@@ -67,24 +67,39 @@
                                     <constraint firstAttribute="width" constant="120" id="EOG-Bl-08g"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwc-Dp-op6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwc-Dp-op6">
                                 <rect key="frame" x="271.33333333333331" y="296" width="30.666666666666686" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
                                 <color key="textColor" name="weatherColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBH-cy-5DJ">
-                                <rect key="frame" x="233" y="233" width="69" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBH-cy-5DJ">
+                                <rect key="frame" x="233" y="233" width="69" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" name="weatherColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or9-lo-txG">
+                                <rect key="frame" x="311" y="74" width="30" height="28.333333333333332"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dtv-ZJ-ma5"/>
+                                    <constraint firstAttribute="width" constant="30" id="tFW-ui-k4E"/>
+                                </constraints>
+                                <color key="tintColor" name="weatherColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="searchPerssed:" destination="LGf-6N-Stg" eventType="touchUpInside" id="ZjI-Gm-OA1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5WO-hb-ggV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TTP-pv-sm2" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="1a6-Kq-ohh"/>
                             <constraint firstItem="5WO-hb-ggV" firstAttribute="trailing" secondItem="pwc-Dp-op6" secondAttribute="trailing" constant="91" id="3bW-q6-vpk"/>
+                            <constraint firstItem="5WO-hb-ggV" firstAttribute="trailing" secondItem="Or9-lo-txG" secondAttribute="trailing" constant="52" id="5yv-Ae-gbD"/>
+                            <constraint firstItem="Ecf-RY-5Qx" firstAttribute="leading" secondItem="pWt-Eq-1Lx" secondAttribute="trailing" constant="94" id="6Ke-BB-7Yt"/>
                             <constraint firstItem="T2c-Sa-mJX" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="8gf-BC-bbz"/>
                             <constraint firstItem="T2c-Sa-mJX" firstAttribute="top" secondItem="5WO-hb-ggV" secondAttribute="top" constant="12" id="Ehv-G0-WK2"/>
                             <constraint firstItem="5WO-hb-ggV" firstAttribute="trailing" secondItem="Ecf-RY-5Qx" secondAttribute="trailing" constant="60" id="GON-1e-ul5"/>
@@ -92,6 +107,7 @@
                             <constraint firstItem="d12-uI-MMR" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="HQk-Ej-B8k"/>
                             <constraint firstItem="TTP-pv-sm2" firstAttribute="top" secondItem="cjL-KM-HYB" secondAttribute="bottom" constant="170.66999999999999" id="Hor-wn-NJt"/>
                             <constraint firstItem="cjL-KM-HYB" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="Mfj-hU-gW9"/>
+                            <constraint firstAttribute="bottom" secondItem="Ecf-RY-5Qx" secondAttribute="bottom" constant="649.66666666666663" id="Phy-3V-hFs"/>
                             <constraint firstItem="ZBH-cy-5DJ" firstAttribute="top" secondItem="Ecf-RY-5Qx" secondAttribute="bottom" constant="30.670000000000002" id="Rko-aT-fyX"/>
                             <constraint firstItem="HgI-0I-ciC" firstAttribute="leading" secondItem="2yD-Ig-rGO" secondAttribute="leading" id="UK3-lT-xpn"/>
                             <constraint firstItem="pWt-Eq-1Lx" firstAttribute="leading" secondItem="5WO-hb-ggV" secondAttribute="leading" constant="50" id="UzR-eR-a1t"/>
@@ -100,8 +116,10 @@
                             <constraint firstAttribute="trailing" secondItem="HgI-0I-ciC" secondAttribute="trailing" id="ePj-vL-7vo"/>
                             <constraint firstItem="Ecf-RY-5Qx" firstAttribute="top" secondItem="cjL-KM-HYB" secondAttribute="bottom" constant="34.670000000000002" id="ezU-Nj-CZh"/>
                             <constraint firstItem="cjL-KM-HYB" firstAttribute="top" secondItem="T2c-Sa-mJX" secondAttribute="bottom" constant="16" id="fPB-2j-Y5l"/>
+                            <constraint firstItem="Ecf-RY-5Qx" firstAttribute="top" secondItem="T2c-Sa-mJX" secondAttribute="bottom" constant="77" id="ghw-qb-ROk"/>
                             <constraint firstItem="HgI-0I-ciC" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="gyK-iI-cgp"/>
                             <constraint firstItem="5WO-hb-ggV" firstAttribute="trailing" secondItem="ZBH-cy-5DJ" secondAttribute="trailing" constant="91" id="lKt-Xs-e2d"/>
+                            <constraint firstItem="Or9-lo-txG" firstAttribute="top" secondItem="5WO-hb-ggV" secondAttribute="top" constant="14" id="t7w-rW-7cQ"/>
                             <constraint firstAttribute="bottom" secondItem="HgI-0I-ciC" secondAttribute="bottom" id="vdQ-hd-ynk"/>
                             <constraint firstItem="d12-uI-MMR" firstAttribute="bottom" secondItem="5WO-hb-ggV" secondAttribute="bottom" constant="2" id="xtj-Ua-O8H"/>
                         </constraints>
@@ -111,6 +129,7 @@
                         <outlet property="conditionImage" destination="d12-uI-MMR" id="mgw-zi-WgD"/>
                         <outlet property="conditionLabel" destination="ZBH-cy-5DJ" id="4Ly-Qn-bRx"/>
                         <outlet property="locationLabel" destination="cjL-KM-HYB" id="dg3-4F-8CQ"/>
+                        <outlet property="searchButton" destination="Or9-lo-txG" id="Gmc-Yz-fYX"/>
                         <outlet property="searchTextField" destination="T2c-Sa-mJX" id="ILb-Zm-KG2"/>
                         <outlet property="tempLabel" destination="TTP-pv-sm2" id="rFe-tk-mz3"/>
                         <outlet property="unitLabel" destination="pwc-Dp-op6" id="we1-qL-Ylq"/>
@@ -124,6 +143,7 @@
     <resources>
         <image name="Unfwtitled-1" width="217" height="216"/>
         <image name="background" width="7308" height="7308"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="sun.min.fill" catalog="system" width="128" height="123"/>
         <namedColor name="weatherColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
