@@ -35,6 +35,33 @@ class WeatherViewController: UIViewController {
     }
 }
 
+extension WeatherViewController: UITextFieldDelegate {
+
+    @IBAction func searchPerssed(_ sender: UIButton) {
+        searchTextField.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchTextField.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField != "" {
+            return true
+        }else{
+            textField.placeholder = "type Somthing"
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let city = searchTextField.text {
+            weatherManager.fetchWeather(city: city)
+        }
+        searchTextField.text = ""
+    }
+}
 
 
     

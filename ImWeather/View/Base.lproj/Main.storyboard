@@ -33,10 +33,12 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T2c-Sa-mJX">
                                 <rect key="frame" x="101.66666666666669" y="71" width="190" height="34"/>
                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                                <color key="tintColor" name="weatherColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="LpK-eC-fLD"/>
                                     <constraint firstAttribute="width" constant="190" id="lCi-Bv-QMI"/>
                                 </constraints>
+                                <color key="textColor" name="weatherColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
