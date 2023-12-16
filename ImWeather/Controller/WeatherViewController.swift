@@ -22,7 +22,7 @@ class WeatherViewController: UIViewController {
     
     
     
-    let weatherManager = WeatherManager()
+    var weatherManager = WeatherManager()
     
     
     
@@ -60,6 +60,22 @@ extension WeatherViewController: UITextFieldDelegate {
             weatherManager.fetchWeather(city: city)
         }
         searchTextField.text = ""
+    }
+}
+
+extension WeatherViewController: WeatherManagerDelegate {
+    
+    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
+        DispatchQueue.main.async {
+            self.locationLabel.text = weather.cityName
+            self.conditionLabel.text = weather.description
+            self.tempLabel.text = weather.temperatureString
+            self.conditionIcon.image = UIImage(named: "\(weather.conditionIcon)")
+        }
+    }
+    
+    func didFaileWithError(error: Error) {
+        print(error)
     }
 }
 
