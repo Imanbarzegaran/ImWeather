@@ -8,6 +8,7 @@
 import UIKit
 import CoreLocation
 
+
 class WeatherViewController: UIViewController {
     
     @IBOutlet weak var locationLabel: UILabel!
@@ -70,7 +71,10 @@ extension WeatherViewController: WeatherManagerDelegate {
             self.locationLabel.text = weather.cityName
             self.conditionLabel.text = weather.description
             self.tempLabel.text = weather.temperatureString
-            self.conditionIcon.image = UIImage(named: "\(weather.conditionIcon)")
+           
+         self.conditionIcon.image = UIImage(named: "\(weather.conditionIcon)")
+            self.conditionImage.image = UIImage(named: "")
+            
         }
     }
     

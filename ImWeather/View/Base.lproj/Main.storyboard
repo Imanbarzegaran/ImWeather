@@ -43,8 +43,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTP-pv-sm2">
-                                <rect key="frame" x="161.66666666666666" y="318" width="70" height="74"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="62"/>
+                                <rect key="frame" x="161" y="318" width="71" height="74"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="62"/>
                                 <color key="textColor" name="weatherColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -70,14 +70,14 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwc-Dp-op6">
-                                <rect key="frame" x="271.33333333333331" y="296" width="30.666666666666686" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <rect key="frame" x="258.33333333333331" y="296" width="43.666666666666686" height="44.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
                                 <color key="textColor" name="weatherColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBH-cy-5DJ">
-                                <rect key="frame" x="233" y="233" width="69" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <rect key="frame" x="232" y="233" width="70" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" name="weatherColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
