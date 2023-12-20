@@ -19,6 +19,8 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var conditionImage: UIImageView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var imWeatherBackground: UIImageView!
+    @IBOutlet weak var weatherBoard: UIView!
     
     
     
@@ -32,7 +34,8 @@ class WeatherViewController: UIViewController {
         
         weatherManager.delegate = self
         searchTextField.delegate = self
-        
+        weatherBoard.layer.cornerRadius = 15
+        weatherBoard.layer.masksToBounds = true
     }
 }
 
@@ -73,7 +76,7 @@ extension WeatherViewController: WeatherManagerDelegate {
             self.tempLabel.text = weather.temperatureString
            
          self.conditionIcon.image = UIImage(named: "\(weather.conditionIcon)")
-            self.conditionImage.image = UIImage(named: "")
+            self.imWeatherBackground.image = UIImage(named: weather.conditionBackground)
             
         }
     }

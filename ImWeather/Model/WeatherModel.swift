@@ -51,7 +51,7 @@ struct WeatherModel {
         }
     }
     
-    var conditionImage: String {
+    var conditionBackground: String {
         switch conditionIcon {
         case "01d":
             return "sunny"
