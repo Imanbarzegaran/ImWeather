@@ -76,5 +76,32 @@ struct WeatherModel {
             return "sunny"
         }
     }
+    
+    var conditionImage: String {
+        switch conditionIcon {
+        case "01d":
+            return "sunnyImage"
+        case "02d":
+            return "partCloudyImage"
+        case "03d":
+            return "cloudyImage"
+        case "04d":
+            return "cloudyImage"
+        case "09d":
+            return "rainyImage"
+        case "10d":
+            return "rainyImage"
+        case "11d":
+            return "thunderstormImage"
+        case "13d":
+            return "snowImage"
+        case "50d":
+            return "fogImage"
+            
+        default:
+            return "sunnyImage"
+        }
+    }
+    
      
 }

@@ -77,6 +77,7 @@ extension WeatherViewController: WeatherManagerDelegate {
            
          self.conditionIcon.image = UIImage(named: "\(weather.conditionIcon)")
             self.imWeatherBackground.image = UIImage(named: weather.conditionBackground)
+            self.conditionImage.image = UIImage(named: weather.conditionImage)
             
         }
     }
