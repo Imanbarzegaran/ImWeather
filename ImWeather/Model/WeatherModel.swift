@@ -13,12 +13,31 @@ struct WeatherModel {
     let cityName: String
     let temperature: Double
     let description: String
+    let max: Double
+    let min: Double
+    let feels: Double
+    let windSpeed: Double
+    let humidity: Int
    
     
     var temperatureString: String {
         return String(format: "%.1f", temperature)
     }
-    
+    var temMax: String {
+        return String(format: "%.1f", max)
+    }
+    var tempMin: String {
+        return String(format: "%.1f", min)
+    }
+    var speedString : String {
+        return String(format: "%.1f", windSpeed)
+    }
+    var humidityString: String {
+        return String(humidity)
+    }
+    var feelsString : String {
+        return String(format: "%.1f", feels)
+    }
     
     
     var conditionIcon: String {
