@@ -113,13 +113,6 @@
                                     <constraint firstAttribute="bottom" secondItem="28g-yc-G4L" secondAttribute="bottom" constant="30" id="xVX-Ut-yQx"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cloudyImage" translatesAutoresizingMaskIntoConstraints="NO" id="d12-uI-MMR">
-                                <rect key="frame" x="37" y="507" width="320" height="320"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="353" id="mbS-Ig-Gkj"/>
-                                    <constraint firstAttribute="width" constant="350" id="nGE-8P-7fk"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvE-1S-dBJ" userLabel="detailView">
                                 <rect key="frame" x="36.666666666666657" y="407" width="320" height="70"/>
                                 <subviews>
@@ -257,10 +250,18 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="eu8-9Q-x9m"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudyImage" translatesAutoresizingMaskIntoConstraints="NO" id="d12-uI-MMR">
+                                <rect key="frame" x="46.666666666666657" y="514" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="mbS-Ig-Gkj"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="nGE-8P-7fk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5WO-hb-ggV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="d12-uI-MMR" secondAttribute="bottom" constant="4" id="0sa-H8-sK2"/>
                             <constraint firstItem="5WO-hb-ggV" firstAttribute="trailing" secondItem="Or9-lo-txG" secondAttribute="trailing" constant="52" id="5yv-Ae-gbD"/>
                             <constraint firstItem="Vzr-dF-7TS" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="7s4-sG-QRq"/>
                             <constraint firstItem="T2c-Sa-mJX" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="8gf-BC-bbz"/>
@@ -279,7 +280,6 @@
                             <constraint firstItem="5WO-hb-ggV" firstAttribute="trailing" secondItem="Np4-fQ-NHI" secondAttribute="trailing" constant="36" id="onP-mO-uzn"/>
                             <constraint firstItem="Or9-lo-txG" firstAttribute="top" secondItem="5WO-hb-ggV" secondAttribute="top" constant="14" id="t7w-rW-7cQ"/>
                             <constraint firstAttribute="bottom" secondItem="HgI-0I-ciC" secondAttribute="bottom" id="vdQ-hd-ynk"/>
-                            <constraint firstItem="d12-uI-MMR" firstAttribute="bottom" secondItem="5WO-hb-ggV" secondAttribute="bottom" constant="2" id="xtj-Ua-O8H"/>
                             <constraint firstItem="gvE-1S-dBJ" firstAttribute="centerX" secondItem="2yD-Ig-rGO" secondAttribute="centerX" id="yWz-Ee-lZ3"/>
                         </constraints>
                     </view>
