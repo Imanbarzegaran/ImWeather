@@ -12,8 +12,11 @@ protocol WeatherManagerDelegate {
     func didUpdateWeather (_ weatherManager: WeatherManager, weather: WeatherModel)
 }
 
+let appid = Bundle.main.infoDictionary!["Appid"] as! String
+
 struct WeatherManager {
-    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=d5e422e0aa5a9636a759208fe9de1eb2&units=metric"
+   
+    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=\(appid)&units=metric"
     var delegate: WeatherManagerDelegate?
     
     func fetchWeather (city: String) {
